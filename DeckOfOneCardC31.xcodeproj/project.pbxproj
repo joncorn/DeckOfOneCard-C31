@@ -13,6 +13,9 @@
 		6DAAF8EB23E098F40072D03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF8EA23E098F40072D03C /* Assets.xcassets */; };
 		6DAAF8EE23E098F40072D03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF8EC23E098F40072D03C /* LaunchScreen.storyboard */; };
 		6DAAF8F123E098F40072D03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF8F023E098F40072D03C /* main.m */; };
+		6DAAF93323E0D4EF0072D03C /* JDCCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF93223E0D4EF0072D03C /* JDCCard.m */; };
+		6DAAF93623E0D6640072D03C /* JDCCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF93523E0D6640072D03C /* JDCCardController.m */; };
+		6DAAF93C23E0DDC20072D03C /* JDCCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF93B23E0DDC20072D03C /* JDCCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		6DAAF8ED23E098F40072D03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DAAF8EF23E098F40072D03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAAF8F023E098F40072D03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DAAF93123E0D4EF0072D03C /* JDCCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCCard.h; sourceTree = "<group>"; };
+		6DAAF93223E0D4EF0072D03C /* JDCCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCCard.m; sourceTree = "<group>"; };
+		6DAAF93423E0D6640072D03C /* JDCCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDCCardController.h; sourceTree = "<group>"; };
+		6DAAF93523E0D6640072D03C /* JDCCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDCCardController.m; sourceTree = "<group>"; };
+		6DAAF93A23E0DDC20072D03C /* DeckOfOneCardC31-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfOneCardC31-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DAAF93B23E0DDC20072D03C /* JDCCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDCCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,8 @@
 		6DAAF8F823E099380072D03C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DAAF93123E0D4EF0072D03C /* JDCCard.h */,
+				6DAAF93223E0D4EF0072D03C /* JDCCard.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +119,8 @@
 		6DAAF8FB23E099430072D03C /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DAAF93423E0D6640072D03C /* JDCCardController.h */,
+				6DAAF93523E0D6640072D03C /* JDCCardController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -115,6 +128,8 @@
 		6DAAF8FC23E099480072D03C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DAAF93B23E0DDC20072D03C /* JDCCardViewController.swift */,
+				6DAAF93A23E0DDC20072D03C /* DeckOfOneCardC31-Bridging-Header.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,11 +160,13 @@
 		6DAAF8D323E098EE0072D03C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDC;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Jon Corn";
 				TargetAttributes = {
 					6DAAF8DA23E098EE0072D03C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -191,7 +208,10 @@
 			files = (
 				6DAAF8E023E098EE0072D03C /* AppDelegate.m in Sources */,
 				6DAAF8F123E098F40072D03C /* main.m in Sources */,
+				6DAAF93623E0D6640072D03C /* JDCCardController.m in Sources */,
 				6DAAF8E323E098EE0072D03C /* SceneDelegate.m in Sources */,
+				6DAAF93C23E0DDC20072D03C /* JDCCardViewController.swift in Sources */,
+				6DAAF93323E0D4EF0072D03C /* JDCCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardC31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +360,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdcorn.DeckOfOneCardC31;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCardC31/Controllers/ViewControllers/DeckOfOneCardC31-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -347,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardC31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,6 +380,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdcorn.DeckOfOneCardC31;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCardC31/Controllers/ViewControllers/DeckOfOneCardC31-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
