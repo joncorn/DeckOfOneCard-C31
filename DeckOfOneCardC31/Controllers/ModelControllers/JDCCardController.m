@@ -21,6 +21,7 @@ static NSString *const baseURLString = @"https://deckofcardsapi.com/api/deck/new
     // Append 'draw/' to base url
     NSURL *drawURL = [baseURL URLByAppendingPathComponent:@"draw/"];
     NSString *cardCount = [numberOfCards stringValue];
+    // Query items
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:drawURL resolvingAgainstBaseURL:true];
     NSURLQueryItem *queryItem = [NSURLQueryItem queryItemWithName:@"count" value:cardCount];
     urlComponents.queryItems = @[queryItem];
