@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6DAAF8E023E098EE0072D03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF8DF23E098EE0072D03C /* AppDelegate.m */; };
 		6DAAF8E323E098EE0072D03C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF8E223E098EE0072D03C /* SceneDelegate.m */; };
-		6DAAF8E623E098EE0072D03C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAF8E523E098EE0072D03C /* ViewController.m */; };
 		6DAAF8E923E098EE0072D03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF8E723E098EE0072D03C /* Main.storyboard */; };
 		6DAAF8EB23E098F40072D03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF8EA23E098F40072D03C /* Assets.xcassets */; };
 		6DAAF8EE23E098F40072D03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAAF8EC23E098F40072D03C /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		6DAAF8DF23E098EE0072D03C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6DAAF8E123E098EE0072D03C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		6DAAF8E223E098EE0072D03C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		6DAAF8E423E098EE0072D03C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DAAF8E523E098EE0072D03C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DAAF8E823E098EE0072D03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DAAF8EA23E098F40072D03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DAAF8ED23E098F40072D03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,65 @@
 		6DAAF8DD23E098EE0072D03C /* DeckOfOneCardC31 */ = {
 			isa = PBXGroup;
 			children = (
+				6DAAF8E723E098EE0072D03C /* Main.storyboard */,
+				6DAAF8F823E099380072D03C /* Models */,
+				6DAAF8F923E0993C0072D03C /* Views */,
+				6DAAF8FA23E0993F0072D03C /* Controllers */,
+				6DAAF8F723E099070072D03C /* Resources */,
+			);
+			path = DeckOfOneCardC31;
+			sourceTree = "<group>";
+		};
+		6DAAF8F723E099070072D03C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				6DAAF8DE23E098EE0072D03C /* AppDelegate.h */,
 				6DAAF8DF23E098EE0072D03C /* AppDelegate.m */,
 				6DAAF8E123E098EE0072D03C /* SceneDelegate.h */,
 				6DAAF8E223E098EE0072D03C /* SceneDelegate.m */,
-				6DAAF8E423E098EE0072D03C /* ViewController.h */,
-				6DAAF8E523E098EE0072D03C /* ViewController.m */,
-				6DAAF8E723E098EE0072D03C /* Main.storyboard */,
 				6DAAF8EA23E098F40072D03C /* Assets.xcassets */,
 				6DAAF8EC23E098F40072D03C /* LaunchScreen.storyboard */,
 				6DAAF8EF23E098F40072D03C /* Info.plist */,
 				6DAAF8F023E098F40072D03C /* main.m */,
 			);
-			path = DeckOfOneCardC31;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DAAF8F823E099380072D03C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DAAF8F923E0993C0072D03C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DAAF8FA23E0993F0072D03C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DAAF8FB23E099430072D03C /* ModelControllers */,
+				6DAAF8FC23E099480072D03C /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6DAAF8FB23E099430072D03C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		6DAAF8FC23E099480072D03C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +189,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAAF8E623E098EE0072D03C /* ViewController.m in Sources */,
 				6DAAF8E023E098EE0072D03C /* AppDelegate.m in Sources */,
 				6DAAF8F123E098F40072D03C /* main.m in Sources */,
 				6DAAF8E323E098EE0072D03C /* SceneDelegate.m in Sources */,
@@ -290,7 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCardC31/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardC31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCardC31/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardC31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
