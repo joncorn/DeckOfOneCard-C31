@@ -18,6 +18,7 @@ static NSString *const baseURLString = @"https://deckofcardsapi.com/api/deck/new
 {
     // Build URL
     NSURL *baseURL = [NSURL URLWithString:baseURLString];
+    // Append 'draw/' to base url
     NSURL *drawURL = [baseURL URLByAppendingPathComponent:@"draw/"];
     NSString *cardCount = [numberOfCards stringValue];
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:drawURL resolvingAgainstBaseURL:true];
