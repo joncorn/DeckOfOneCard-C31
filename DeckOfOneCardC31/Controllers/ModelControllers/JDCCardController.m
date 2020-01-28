@@ -56,6 +56,7 @@ static NSString *const baseURLString = @"https://deckofcardsapi.com/api/deck/new
         NSMutableArray *cardsPlaceholder = [NSMutableArray array];
         for (NSDictionary *cardDictionary in cardsArray)
         {
+            // Append card to card array
             JDCCard *card = [[JDCCard alloc] initWithDictionary: cardDictionary];
             [cardsPlaceholder addObject: card];
         }
